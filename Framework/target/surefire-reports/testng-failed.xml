@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" verbose="0" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="Divy.Framework.ITestListenerInterfaceClass"/>
+  </listeners>
+  <test name="Test(failed)">
+    <classes>
+      <class name="Divy.Framework.HomePageTestCases">
+        <methods>
+          <include name="teardown"/>
+          <include name="flightBtnSelected"/>
+          <include name="browserInit"/>
+        </methods>
+      </class> <!-- Divy.Framework.HomePageTestCases -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

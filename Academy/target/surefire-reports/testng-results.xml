@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="107754" started-at="2020-05-19T15:03:03Z" finished-at="2020-05-19T15:04:51Z">
+    <groups>
+    </groups>
+    <test name="FailTest" duration-ms="65339" started-at="2020-05-19T15:03:03Z" finished-at="2020-05-19T15:04:09Z">
+      <class name="Academy.FailCase">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:Academy.FailCase@4c178a76]" name="invokeBrowser" is-config="true" duration-ms="63874" started-at="2020-05-19T20:33:03Z" finished-at="2020-05-19T20:34:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="FAIL" signature="failvalidateTitle()[pri:0, instance:Academy.FailCase@4c178a76]" name="failvalidateTitle" duration-ms="326" started-at="2020-05-19T20:34:07Z" finished-at="2020-05-19T20:34:07Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Feature fail title] but found [FEATURED COURSES]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Feature fail title] but found [FEATURED COURSES]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at Academy.FailCase.failvalidateTitle(FailCase.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:659)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:845)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1153)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:391)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- failvalidateTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.FailCase@4c178a76]" name="teardown" is-config="true" duration-ms="195" started-at="2020-05-19T20:34:08Z" finished-at="2020-05-19T20:34:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.FailCase -->
+    </test> <!-- FailTest -->
+    <test name="ValidateFeatureTitle" duration-ms="72611" started-at="2020-05-19T15:03:03Z" finished-at="2020-05-19T15:04:16Z">
+      <class name="Academy.ValidateFeatureTitle">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:Academy.ValidateFeatureTitle@61322f9d]" name="invokeBrowser" is-config="true" duration-ms="72479" started-at="2020-05-19T20:33:03Z" finished-at="2020-05-19T20:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="validateTitle()[pri:0, instance:Academy.ValidateFeatureTitle@61322f9d]" name="validateTitle" duration-ms="51" started-at="2020-05-19T20:34:16Z" finished-at="2020-05-19T20:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateTitle -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.ValidateFeatureTitle@61322f9d]" name="teardown" is-config="true" duration-ms="78" started-at="2020-05-19T20:34:16Z" finished-at="2020-05-19T20:34:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.ValidateFeatureTitle -->
+    </test> <!-- ValidateFeatureTitle -->
+    <test name="HomePageTest" duration-ms="107754" started-at="2020-05-19T15:03:03Z" finished-at="2020-05-19T15:04:51Z">
+      <class name="Academy.HomapageTest">
+        <test-method status="PASS" signature="invokeBrowser()[pri:0, instance:Academy.HomapageTest@1a677343]" name="invokeBrowser" is-config="true" duration-ms="3536" started-at="2020-05-19T20:33:03Z" finished-at="2020-05-19T20:33:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method status="PASS" signature="closingNewsPopup(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomapageTest@1a677343]" name="closingNewsPopup" duration-ms="90747" started-at="2020-05-19T20:33:07Z" data-provider="loginData" finished-at="2020-05-19T20:34:38Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FirstData@mail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingNewsPopup -->
+        <test-method status="PASS" signature="closingNewsPopup(java.lang.String, java.lang.String)[pri:0, instance:Academy.HomapageTest@1a677343]" name="closingNewsPopup" duration-ms="11361" started-at="2020-05-19T20:34:38Z" data-provider="loginData" finished-at="2020-05-19T20:34:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[SecondData@mail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingNewsPopup -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Academy.HomapageTest@1a677343]" name="teardown" is-config="true" duration-ms="2094" started-at="2020-05-19T20:34:49Z" finished-at="2020-05-19T20:34:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Academy.HomapageTest -->
+    </test> <!-- HomePageTest -->
+  </suite> <!-- Suite -->
+</testng-results>

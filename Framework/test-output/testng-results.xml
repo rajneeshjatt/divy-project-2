@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="5" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="65334" started-at="2020-05-25T11:02:48Z" finished-at="2020-05-25T11:03:54Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="65334" started-at="2020-05-25T11:02:48Z" finished-at="2020-05-25T11:03:54Z">
+      <class name="Divy.Framework.HomePageTestCases">
+        <test-method status="PASS" signature="browserInit()[pri:0, instance:Divy.Framework.HomePageTestCases@6404f418]" name="browserInit" is-config="true" duration-ms="40773" started-at="2020-05-25T11:02:48Z" finished-at="2020-05-25T11:03:29Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserInit -->
+        <test-method status="PASS" signature="titleVerification()[pri:1, instance:Divy.Framework.HomePageTestCases@6404f418]" name="titleVerification" duration-ms="5091" started-at="2020-05-25T11:03:29Z" finished-at="2020-05-25T11:03:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleVerification -->
+        <test-method status="PASS" signature="privacyLinkVerify()[pri:2, instance:Divy.Framework.HomePageTestCases@6404f418]" name="privacyLinkVerify" duration-ms="5159" started-at="2020-05-25T11:03:34Z" finished-at="2020-05-25T11:03:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- privacyLinkVerify -->
+        <test-method status="PASS" signature="cookieCrossbtnVerify()[pri:3, instance:Divy.Framework.HomePageTestCases@6404f418]" name="cookieCrossbtnVerify" duration-ms="5283" started-at="2020-05-25T11:03:39Z" finished-at="2020-05-25T11:03:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cookieCrossbtnVerify -->
+        <test-method status="PASS" signature="flightBtnSelected()[pri:4, instance:Divy.Framework.HomePageTestCases@6404f418]" name="flightBtnSelected" duration-ms="5093" started-at="2020-05-25T11:03:45Z" finished-at="2020-05-25T11:03:50Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flightBtnSelected -->
+        <test-method status="FAIL" signature="languagedrpdown()[pri:5, instance:Divy.Framework.HomePageTestCases@6404f418]" name="languagedrpdown" duration-ms="78" started-at="2020-05-25T11:03:50Z" finished-at="2020-05-25T11:03:50Z">
+          <exception class="org.openqa.selenium.support.ui.UnexpectedTagNameException">
+            <message>
+              <![CDATA[Element should have been "select" but was "span"
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-A97EKAP', ip: '192.168.43.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.support.ui.UnexpectedTagNameException: Element should have been "select" but was "span"
+Build info: version: '3.10.0', revision: '176b4a9', time: '2018-03-02T19:03:16.397Z'
+System info: host: 'DESKTOP-A97EKAP', ip: '192.168.43.15', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_241'
+Driver info: driver.version: unknown
+at org.openqa.selenium.support.ui.Select.<init>(Select.java:47)
+at Divy.Framework.HomePageObjectRepository.langaugechk(HomePageObjectRepository.java:75)
+at Divy.Framework.HomePageTestCases.languagedrpdown(HomePageTestCases.java:72)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.support.ui.UnexpectedTagNameException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- languagedrpdown -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Divy.Framework.HomePageTestCases@6404f418]" name="teardown" is-config="true" duration-ms="2322" started-at="2020-05-25T11:03:51Z" finished-at="2020-05-25T11:03:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Divy.Framework.HomePageTestCases -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

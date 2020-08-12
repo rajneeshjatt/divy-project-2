@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--  <Configuration status="INFO">
+
+	<Properties>
+		<property name="basepath">./logs</property>
+	</Properties>
+
+	<Appenders>
+		<RollingFile name="file" FileName="${basepath}/prints.log"
+			FilePatern="${basePath}/prints-%d{yyyy-MM-dd}.log">
+			<PatternLayput
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+			<SizeBasedTriggeringPolicy size="1000" />
+		</RollingFile>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayput
+				pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+		</Console>
+	</Appenders>
+
+	<Loggers>
+		<Root level="trace">
+			<AppenderRef ref="file" />
+		</Root>
+	</Loggers>
+</Configuration>     -->
+
+
+<Configuration status="INFO">
+
+    <Appenders>
+        <Console name="ConsoleAppender" target="SYSTEM_OUT">
+            <PatternLayout pattern="%d{HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n" />
+        </Console>
+        <File name="FileAppender" fileName="./application-${date:yyyyMMdd}.log" immediateFlush="false" append="true">
+            <PatternLayout pattern="%d{yyy-MM-dd HH:mm:ss.SSS} [%t] %-5level %logger{36} - %msg%n"/>
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="debug">
+            <AppenderRef ref="ConsoleAppender" />
+            <AppenderRef ref="FileAppender"/>
+        </Root>
+    </Loggers>
+</Configuration>
